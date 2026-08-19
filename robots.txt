@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://clipbotsahoj.github.io/BetterBots7/sitemap.xml
