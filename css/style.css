@@ -224,11 +224,20 @@ section {
 }
 
 .nav-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
   font-family: var(--font-display);
   font-weight: 700;
   font-size: var(--text-lg);
   letter-spacing: 0.04em;
   color: var(--color-fg);
+}
+
+.nav-brand-logo {
+  height: 32px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
