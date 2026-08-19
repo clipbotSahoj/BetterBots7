@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Join Us — BetterBots7</title>
+  <meta name="description" content="Interested in joining FTC Team 25907, BetterBots7? Send us your info.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css?v=14">
+</head>
+<body>
+
+  <div class="bg-ambient" aria-hidden="true">
+    <canvas id="bgCanvas" class="bg-canvas"></canvas>
+  </div>
+
+  <header class="site-nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-brand">BETTERBOTS7</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="about.html">About</a>
+        <a href="robot.html">Robot</a>
+        <a href="seasons.html">Seasons</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="join.html" class="nav-cta" aria-current="page">Join Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero-xl">
+      <div class="hero-glow-local" aria-hidden="true"></div>
+      <div class="hero-watermark" aria-hidden="true">JOIN</div>
+      <div class="container">
+        <span class="eyebrow hero-badge reveal">Get Involved</span>
+        <h1 class="page-hero-title reveal">Join BetterBots7</h1>
+        <p class="page-hero-sub reveal">
+          Interested in mechanical, programming, design, outreach, or business? Tell us a bit
+          about yourself and we'll get back to you.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container content-dense">
+
+        <form class="form" id="joinForm" action="https://formspree.io/f/xppakdzv" method="POST">
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="_subject" value="New BetterBots7 interest form submission">
+
+          <div class="form-field">
+            <label class="form-label" for="field-name">Name <span class="required">*</span></label>
+            <input class="form-input" type="text" id="field-name" name="name" autocomplete="name" required>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="field-grade-school">Grade / School <span class="required">*</span></label>
+            <input class="form-input" type="text" id="field-grade-school" name="grade_school" required>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="field-email">Email <span class="required">*</span></label>
+            <span class="form-hint">So we can reply to you.</span>
+            <input class="form-input" type="email" id="field-email" name="email" autocomplete="email" required>
+          </div>
+
+          <fieldset class="form-field">
+            <legend class="form-label">What are you interested in?</legend>
+            <div class="form-checkbox-group">
+              <label class="form-checkbox"><input type="checkbox" name="interest" value="Mechanical"> Mechanical</label>
+              <label class="form-checkbox"><input type="checkbox" name="interest" value="Programming/Coding"> Programming/Coding</label>
+              <label class="form-checkbox"><input type="checkbox" name="interest" value="Design/CAD"> Design/CAD</label>
+              <label class="form-checkbox"><input type="checkbox" name="interest" value="Outreach & Marketing"> Outreach &amp; Marketing</label>
+              <label class="form-checkbox"><input type="checkbox" name="interest" value="Business/Fundraising"> Business/Fundraising</label>
+              <label class="form-checkbox"><input type="checkbox" name="interest" value="Not sure yet"> Not sure yet</label>
+            </div>
+          </fieldset>
+
+          <div class="form-field">
+            <label class="form-label" for="field-experience">Prior experience</label>
+            <span class="form-hint">Optional.</span>
+            <input class="form-input" type="text" id="field-experience" name="experience">
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="field-message">Questions or anything else</label>
+            <textarea class="form-textarea" id="field-message" name="message"></textarea>
+          </div>
+
+          <div>
+            <button class="btn-primary" type="submit" id="joinSubmit">Send</button>
+            <p class="form-error" id="joinError" role="alert" hidden></p>
+          </div>
+        </form>
+
+        <div class="form-confirmation reveal" id="joinConfirmation" role="status" aria-live="polite" hidden>
+          <span class="form-confirmation-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </span>
+          <h2 class="cta-card-title">Thanks — we got it!</h2>
+          <p class="cta-card-body">We'll read your message and get back to you by email soon.</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js?v=4" defer></script>
+</body>
+</html>
